@@ -1,0 +1,137 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  /* max-width: 100%; */
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-size: 12px;
+  padding: 30px;
+  font-family: "Kumbh Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(#af67e9, #6565e7);
+}
+
+main {
+  max-width: 57.5rem;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fff;
+  position: relative;
+}
+
+.img-left {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-pc,
+.img-box,
+.img-pattern {
+  position: absolute;
+}
+
+.img-pc {
+  top: 18%;
+  left: -18%;
+  z-index: 998;
+}
+
+.img-box {
+  top: 62%;
+  left: -10%;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+.img-pattern {
+  top: -55%;
+  left: -125%;
+}
+
+.faq-right {
+  padding: 65px 104px 73px 0;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e1f36;
+  text-transform: uppercase;
+  margin-bottom: 1.625rem;
+}
+
+.item {
+  border-bottom: 1px solid #e8e8ea;
+  padding: 12px 0;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 0.875rem;
+  color: #4b4c5f;
+  font-weight: 400;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.content {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #787887;
+}
+
+.title-row + .content {
+  height: 0;
+  overflow: hidden;
+}
+
+.content.open {
+  height: auto;
+  overflow: visible;
+}
