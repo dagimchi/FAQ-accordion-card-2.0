@@ -124,6 +124,7 @@ main {
   font-size: 0.75rem;
   line-height: 1.5;
   color: #787887;
+  transition: height 0.2s ease-out;
 }
 
 .title-row + .content {
@@ -131,7 +132,7 @@ main {
   overflow: hidden;
 }
 
-.content.open {
-  height: auto;
+.title-row.is-open + .content {
+  height: 36px;
   overflow: visible;
 }
