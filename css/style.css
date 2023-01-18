@@ -120,6 +120,10 @@ main {
   user-select: none;
 }
 
+.title:hover {
+  color: #f47c57;
+}
+
 .content {
   font-size: 0.75rem;
   line-height: 1.5;
@@ -135,4 +139,16 @@ main {
 .title-row.is-open + .content {
   height: 36px;
   overflow: visible;
+}
+
+.title-row.is-open .title {
+  font-weight: 700;
+}
+
+.title-row img {
+  transition: all 0.2s ease-out;
+}
+
+.title-row.is-open img {
+  transform: rotate(180deg);
 }

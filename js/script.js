@@ -12,6 +12,7 @@ titles.forEach((title) => {
         titleWithIsOpen.classList.remove("is-open");
       });
       title.classList.add("is-open");
+      let panel = document.querySelector(".content");
     }
   });
 });

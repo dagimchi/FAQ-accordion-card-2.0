@@ -1,0 +1,54 @@
+@media (max-width: 58.5em) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .img-pattern {
+    max-width: 14.8125rem;
+    left: 50%;
+    top: -130px;
+    transform: translateX(-50%);
+  }
+
+  .img-pc {
+    max-width: 14.8125rem;
+    left: 50%;
+    top: -108px;
+    transform: translateX(-50%);
+  }
+
+  .img-box {
+    max-width: 5rem;
+    top: -8%;
+    left: 50%;
+    transform: translateX(-145%);
+  }
+
+  .img-left {
+    position: relative;
+    overflow: visible;
+  }
+
+  .faq-right {
+    padding-top: 132px;
+    padding-right: 0;
+    padding-bottom: 48px;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .accordion {
+    padding: 0 24px;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+
+  .title-row.is-open + .content {
+    height: 41px;
+    overflow: visible;
+  }
+}
