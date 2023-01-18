@@ -25,7 +25,6 @@ video,
 canvas,
 svg {
   display: block;
-  /* max-width: 100%; */
 }
 input,
 button,
@@ -53,11 +52,18 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: #fff;
+
+  /* FOR THE ABSOLUTELY POSITIONED IMG */
   position: relative;
 }
 
+/* *************************
+LEFT SIDE OF CONTAINER
+************************* */
 .img-left {
   position: relative;
+
+  /* TO HIDE PART OF THE IMG-PC AND IMG-PATTERN */
   overflow: hidden;
 }
 
@@ -85,6 +91,9 @@ main {
   left: -125%;
 }
 
+/* *************************
+RIGHT SIDE OF CONTAINER
+************************* */
 .faq-right {
   padding: 65px 104px 73px 0;
 }
@@ -131,16 +140,22 @@ main {
   transition: height 0.2s ease-out;
 }
 
+/* *************************
+CSS RULES THAT RELY ON JS
+************************* */
 .title-row + .content {
+  /* HIDES THE CONTENT, OVERFLOW IS REQUIRED */
   height: 0;
   overflow: hidden;
 }
 
+/* OPENS THE HIDDEN CONTENT */
 .title-row.is-open + .content {
   height: 36px;
   overflow: visible;
 }
 
+/* BOLDS CORRESPONDING TITLE TEXT WHEN A CONTENT OPENS */
 .title-row.is-open .title {
   font-weight: 700;
 }
@@ -149,6 +164,7 @@ main {
   transition: all 0.2s ease-out;
 }
 
+/* ROTATES 180DEG CORRESPONDING ARROW IMG WHEN A CONTENT OPENS */
 .title-row.is-open img {
   transform: rotate(180deg);
 }

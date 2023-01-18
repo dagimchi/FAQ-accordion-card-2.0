@@ -25,7 +25,6 @@
   }
 
   .img-left {
-    position: relative;
     overflow: visible;
   }
 
@@ -49,6 +48,5 @@
 
   .title-row.is-open + .content {
     height: 41px;
-    overflow: visible;
   }
 }
